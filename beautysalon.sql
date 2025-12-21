@@ -83,6 +83,8 @@ GO
 USE [beautysalon]
 GO
 /****** Object:  User [beautysalon_user]    Script Date: 21/12/2025 11:20:05 AM ******/
+CREATE LOGIN [beautysalon_db_user] WITH PASSWORD = 'B3@uTy!S@l0n#2025'
+go
 CREATE USER [beautysalon_user] FOR LOGIN [beautysalon_db_user] WITH DEFAULT_SCHEMA=[dbo]
 GO
 /****** Object:  Schema [beautysalon]    Script Date: 21/12/2025 11:20:05 AM ******/
