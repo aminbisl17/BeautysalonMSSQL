@@ -15,3 +15,8 @@ EXECUTE register_history @ID = 8, @id_employee = 1, @historiku_detajet = @array;
 --select * from historiku;
 
 --delete from historiku;
+
+
+alter table terminet add [status] nvarchar(15)
+CONSTRAINT CHK_status_values CHECK ([status] IN ('pending','overdue', 'executing'))  
+CONSTRAINT DF_status DEFAULT 'pending';
