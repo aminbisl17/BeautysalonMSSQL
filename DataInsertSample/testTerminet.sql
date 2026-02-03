@@ -9,10 +9,12 @@ values(4, null, '', 5),
 EXEC create_appointment
     @IDClientit = 16,
     @IDEmployee = 10,
-    @pershkrimi = 'Test Appointment',
-    @data_caktimit = '2026-01-19 14:30:00',  -- Same minute as existing appointment
+    @pershkrimi = 'Test 2',
+    @data_caktimit = '2026-01-19 15:00:00',  
     @detajet_termineve = @array,
     @status = @status OUTPUT;
 
-SELECT @status AS StatusResult, * from terminet;
+-- SELECT @status AS StatusResult, * from terminet;
+
+-- select * from terminet;
 
