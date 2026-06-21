@@ -2,13 +2,13 @@ DECLARE @status BIT;
 DECLARE @array detajet_termineve_array;
 
 insert into @array(ID_sherbimit, id_atributit, kohezgjatja, pagesa)
-values(4, null, '', 5),
-(7, null, '', 10),
-(8, null, '', 20);
+values(1020, null, 150, 5),
+(1019, null, 150, 10),
+(1020, null, 150, 20);
 
 EXEC create_appointment
-    @IDClientit = 16,
-    @IDEmployee = 10,
+    @IDClientit = 1037,
+    @IDEmployee = 2014,
     @pershkrimi = 'Test 2',
     @data_caktimit = '2026-01-19 15:00:00',  
     @detajet_termineve = @array,
